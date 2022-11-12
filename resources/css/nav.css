@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 .mains {
     position: relative;
     min-height: 100vh;
-    background: radial-gradient(#016e8b, #029bc5);
+    background: radial-gradient(#058fb6, #029bc5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,21 +24,21 @@ header {
 
 .logo {
     max-width: 90px;
-    border-radius: 14px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
+    border-radius: 50%;
 }
 
 .navigation {
     display: flex;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
 }
+
+
 
 .navigation li {
     position: relative;
     list-style: none;
-
 }
 
 .navigation li a {
@@ -46,7 +48,11 @@ header {
     margin-left: 40px;
 }
 
-.content {
+.navigation li a:hover {
+    color: #000;
+}
+
+.contents {
     position: relative;
     width: 100%;
     display: flex;
@@ -54,31 +60,35 @@ header {
     align-items: center;
 }
 
-.content .text {
+.contents .text {
     width: 100%;
     max-width: 800px;
     margin: 20px 40px;
+
 }
 
-.content .text h2 {
+.contents .text h2 {
     color: #fff;
     font-size: 5rem;
     font-weight: 300;
 
 }
 
-.content .text h3 {
+.contents .text h3 {
     color: #fff;
     font-weight: 400;
     font-size: 33px;
     line-height: 50px;
     margin: 20px 10px;
+    text-shadow: 3px 0px 7px rgba(18, 188, 211, 0.8),
+        -3px 0px 7px rgba(18, 188, 211, 0.8),
+        0px 4px 7px rgba(18, 188, 211, 0.8);
 }
 
 .btn {
     position: relative;
     display: inline-block;
-    padding: 20px 50px;
+    padding: 10px 30px;
     background: #fff;
     color: #000;
     font-size: 20px;
@@ -86,6 +96,7 @@ header {
     border-radius: 40px;
     text-decoration: none;
     transition: 0.25s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .btn:hover {
@@ -102,6 +113,7 @@ header {
 
 .slider .slides.active {
     display: block;
+    margin-bottom: 20px;
 }
 
 .slider .slides img {
@@ -176,11 +188,11 @@ header {
         max-width: 70px;
     }
 
-    .content {
+    .contents {
         flex-direction: column;
     }
 
-    .content .text {
+    .contents .text {
         max-width: 100%;
     }
 
@@ -188,8 +200,8 @@ header {
         margin-top: 104px;
     }
 
-    .content .text h2 {
-        font-size: 25px;
+    .contents .text h2 {
+        font-size: 39px;
     }
 
     .slider {
@@ -274,10 +286,6 @@ header {
 
     .toggle.active::after {
         transform: translateY(0px) rotate(-45deg);
-        -webkit-transform: translateY(0px) rotate(-45deg);
-        -moz-transform: translateY(0px) rotate(-45deg);
-        -ms-transform: translateY(0px) rotate(-45deg);
-        -o-transform: translateY(0px) rotate(-45deg);
     }
 }
 
@@ -297,7 +305,7 @@ header {
     }
 
     .btn {
-        padding: 15px 30px;
+        padding: 8px 20px;
     }
 
     .footer {
@@ -307,5 +315,7 @@ header {
 
     .sci {
         margin-top: 40px;
+        margin-left: 40px;
+
     }
 }

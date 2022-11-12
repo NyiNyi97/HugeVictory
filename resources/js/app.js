@@ -1,16 +1,14 @@
 $(document).ready(function () {
 	$(window).scroll(function () {
 		if (this.scrollY > 20) {
-			$('.NavBar').addClass('sticky');
+			$('header').addClass('sticky');
 		} else {
-			$('.NavBar').removeClass('sticky');
+			$('header').removeClass('sticky');
 		}
 	});
-
-	$('.menu-btn').click(function () {
-		$('.NavBar .menu').toggleClass("active");
-		$('.menu-btn i').toggleClass("active");
-	});
+	$('.js-scroll-trigger').click(function () {
+		$('.navbar-collapse').collapse('hide');
+	})
 
 	$('.customer-logos').slick({
 		slidesToShow: 6,
