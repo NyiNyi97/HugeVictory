@@ -15,7 +15,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 10px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,10 +31,8 @@ header {
     display: flex;
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
 }
-
-
 
 .navigation li {
     position: relative;
@@ -46,6 +44,11 @@ header {
     color: #fff;
     text-decoration: none;
     margin-left: 40px;
+}
+
+.navigation li.active a {
+    color: #000;
+    text-shadow: 3px 0px 7px rgba(2, 105, 119, 0.8);
 }
 
 .navigation li a:hover {
@@ -64,14 +67,12 @@ header {
     width: 100%;
     max-width: 800px;
     margin: 20px 40px;
-
 }
 
 .contents .text h2 {
     color: #fff;
     font-size: 5rem;
     font-weight: 300;
-
 }
 
 .contents .text h3 {
@@ -130,7 +131,10 @@ header {
     justify-content: space-between;
     align-items: flex-end;
 }
-
+.address{
+    font-size: 25px;
+    padding: 10px ;
+}
 .sci {
     display: flex;
 }
@@ -139,17 +143,47 @@ header {
     list-style: none;
 }
 
+.sci li .fab,
+.fa-phone-volume,
+.fa-location-dot {
+    transition: .6s;
+    margin-top: 15px;
+}
+
 .sci li a {
-    color: #fff;
-    font-size: 26px;
-    margin-right: 20px;
+    color: #000;
+    margin-right: 25px;
     display: inline-block;
     transition: 0.25s;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
 }
 
 .sci li a:hover {
-    transform: translateY(-5px);
+    transform: translate(0, -10px);
 }
+
+.sci li:nth-child(1) a:hover {
+    color: #fff;
+    background-color: #3B5998;
+}
+
+.sci li:nth-child(2) a:hover {
+    color: #fff;
+    background-color: #13ee13e8;
+}
+
+.sci li:nth-child(3) a:hover {
+    color: #fff;
+    background-color: #960A0A;
+}
+
 
 .prevNext {
     position: relative;

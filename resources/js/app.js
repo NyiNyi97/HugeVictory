@@ -1,14 +1,11 @@
 $(document).ready(function () {
-	$(window).scroll(function () {
-		if (this.scrollY > 20) {
-			$('header').addClass('sticky');
-		} else {
-			$('header').removeClass('sticky');
-		}
-	});
-	$('.js-scroll-trigger').click(function () {
-		$('.navbar-collapse').collapse('hide');
-	})
+	// $(window).scroll(function () {
+	// 	if (this.scrollY > 20) {
+	// 		$('header').addClass('sticky');
+	// 	} else {
+	// 		$('header').removeClass('sticky');
+	// 	}
+	// });
 
 	$('.customer-logos').slick({
 		slidesToShow: 6,

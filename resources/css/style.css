@@ -777,7 +777,7 @@ a {
 
 /* Count */
 .counter_up {
-    background: url("img/bg3.jpg") no-repeat;
+    background: url("img/huge.jpg") no-repeat;
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -795,7 +795,7 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.815);
 }
 
 .counter_up .content {
@@ -962,4 +962,8 @@ hr {
 /* Footer */
 .bgColor {
     background: #016e8b;
+}
+.text_size{
+    padding: 10px;
+    font-size: 17px;
 }
