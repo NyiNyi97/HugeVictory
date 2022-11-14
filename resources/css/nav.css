@@ -55,6 +55,7 @@ header {
     border-radius: 7px;
 }
 
+
 .navigation li a:hover {
     color: #000;
 }
@@ -95,6 +96,9 @@ header {
     display: inline-block;
     padding: 10px 30px;
     background: linear-gradient(30deg, #02ddff, #5ef784);
+    animation: productA 3s ease alternate infinite;
+    background-size: 300% 300%;
+    -webkit-animation: productA 3s ease alternate infinite;
     color: #000;
     font-size: 20px;
     font-weight: 500;
@@ -102,6 +106,21 @@ header {
     text-decoration: none;
     transition: 0.25s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+@keyframes productA {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .btn:hover {
@@ -135,10 +154,12 @@ header {
     justify-content: space-between;
     align-items: flex-end;
 }
-.address{
+
+.address {
     font-size: 25px;
-    padding: 10px ;
+    padding: 10px;
 }
+
 .sci {
     display: flex;
 }
@@ -199,7 +220,7 @@ header {
     width: 50px;
     height: 50px;
     background: linear-gradient(70deg, #1098ad, #07b39b, #6fba82);
-    border: 2px solid ;
+    border: 2px solid;
     cursor: pointer;
     font-size: 19px;
     color: #000;

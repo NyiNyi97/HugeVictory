@@ -268,6 +268,9 @@
         font-size: 19px;
         line-height: 80px;
     }
+    .title{
+        font-size: 24px;
+    }
 }
 
 @media(max-width: 411px) {
@@ -345,6 +348,12 @@
         font-size: 19px;
         line-height: 80px;
     }
+    .title{
+        font-size: 22px;
+    }
+    .counter_up{
+        background-position: center;
+    }
 }
 
 @media(max-width: 360px) {
@@ -417,6 +426,9 @@
     .s {
         font-size: 17px;
         line-height: 80px;
+    }
+    .title{
+        font-size: 19px;
     }
 }
 
