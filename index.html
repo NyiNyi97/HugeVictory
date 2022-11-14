@@ -67,19 +67,20 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="resources/css/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="intro">
             <div class="logo-header col-12 text-center">
-                <span class="logos">ချစ်လှစွာသောအသုံးပြုများအာလုံးကို</span> <span class="logos s"><strong>HUGE
-                        VICTORY OS </strong> ကနေကြိုဆိုပါတယ်ရှင့်။</span>
+                <span class="logos">ချစ်လှစွာသောအသုံးပြုများအာလုံးကို</span> <span class="logos s">
+                    <strong>HUGE VICTORY OS </strong> ကနေကြိုဆိုပါတယ်ရှင့်။</span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <main>
         <!----- Header ----->
@@ -88,8 +89,8 @@
                 <a href=""><img src="./resources/img/logo.jpg" class="logo" alt=""></a>
                 <div class=" toggle"></div>
                 <ul class="navigation">
-                    <li class="active"><a href="#" title="" class="nav_links">Home</a></li>
                     <li><a href="#about" title="" class="nav_links">About</a></li>
+                    <li><a href="#arrival" title="" class="nav_links">Arrival</a></li>
                     <li><a href="#SellingProducts" title="" class="nav_links">Selling Products </a></li>
                     <li><a href="#services" title="" class="nav_links">Services</a></li>
                     <li><a href="#brand" title="" class="nav_links">Brands</a></li>
@@ -122,32 +123,7 @@
                     <li><a href="https://www.facebook.com/HONEYHTUN11/" target="_blank"><i
                                 class="fab fa-facebook"></i></a></li>
                     <li><a href="tel:09-420003554"><i class="fa-solid fa-phone-volume"></i></a></li>
-                    <li>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="" data-toggle="modal" data-target="#exampleModal">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Our Location</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.7542204135602!2d96.18628861538552!3d16.788899292668493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ece3f21c6787%3A0xd2950e1876245c38!2sBo%20Min%20Yaung%20St%2C%20Yangon!5e0!3m2!1sen!2smm!4v1668229282953!5m2!1sen!2smm"
-                                            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    <li><a href="mailto:moeset.htun@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
                 <div class="prevNext">
                     <span class="prev"><i class="fa-solid fa-angle-left"></i></span>
@@ -197,20 +173,22 @@
         <!-- End About -->
 
         <!---- New Arrivals ----->
-        <section>
+        <section id="arrival">
             <h2 class="text-center title">New Arrival</h2>
             <span class="section-separator"></span>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 mt-4">
+            <!-- Swiper -->
+            <div class="swiper mySwiper container ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="product">
                             <div class="product-image ">
-                                <a href="" class="image">
+                                <a href="#arrival" class="image">
                                     <img src="resources/img/FB_IMG_1667979030292.jpg" class="pic_1" alt="">
                                     <img src="resources/img/newitem1.jpg" class="pic_2" alt="">
                                 </a>
                                 <span class="discount">New</span>
-                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact to
+                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact
+                                    to
                                     Page</a>
                                 <ul class="links">
                                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
@@ -223,16 +201,16 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-3  mt-4">
+                    <div class="swiper-slide">
                         <div class="product">
                             <div class="product-image">
-                                <a href="" class="image">
+                                <a href="#arrival" class="image">
                                     <img src="resources/img/newitem2.jpg" class="pic_1" alt="">
                                     <img src="resources/img/newitem2_1.jpg" class="pic_2" alt="">
                                 </a>
                                 <span class="discount">New</span>
-                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact to
+                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact
+                                    to
                                     Page</a>
                                 <ul class="links">
                                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
@@ -241,22 +219,22 @@
                                 <div class="content">
 
                                     <h3 class="title3"> <a href="">Eaoron Essence </a> </h3>
-                                    <div class="price"><span>18,000 MMK</span></div>
+                                    <div class="price"><span>17,000 MMK</span></div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-3  mt-4">
+                    <div class="swiper-slide">
                         <div class="product">
                             <div class="product-image">
-                                <a href="" class="image">
+                                <a href="#arrival" class="image">
                                     <img src="resources/img/newitem3.jpg" class="pic_1" alt="">
                                     <img src="resources/img/newitem3_1.jpg" class="pic_2" alt="">
                                 </a>
                                 <span class="discount">New</span>
-                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact to
+                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact
+                                    to
                                     Page</a>
                                 <ul class="links">
                                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
@@ -265,22 +243,44 @@
                                 <div class="content">
 
                                     <h3 class="title3"> <a href="">Aura Sunscreen Foundation</a> </h3>
-                                    <div class="price"><span>8,000 MMK</span></div>
+                                    <div class="price"><span>12,000 MMK</span></div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-3  mt-4">
+                    <div class="swiper-slide">
                         <div class="product">
                             <div class="product-image">
-                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="image">
+                                <a href="#arrival" class="image">
                                     <img src="resources/img/newitem4.jpg" class="pic_1" alt="">
                                     <img src="resources/img/newitem4_1.jpg" class="pic_2" alt="">
                                 </a>
                                 <span class="discount">New</span>
-                                <a href="" class="cart">Contact to Page</a>
+                                <a href="#arrival" class="cart">Contact to Page</a>
+                                <ul class="links">
+                                    <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="far fa-heart" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="content">
+
+                                    <h3 class="title3"> <a href="">Eaoron Mask </a> </h3>
+                                    <div class="price"><span>18,`000 MMK</span></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-image">
+                                <a href=" #arrival" class="image">
+                                    <img src="resources/img/newitem5.jpg" class="pic_1" alt="">
+                                    <img src="resources/img/newitem4_1.jpg" class="pic_2" alt="">
+                                </a>
+                                <span class="discount">New</span>
+                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact to
+                                    Page</a>
                                 <ul class="links">
                                     <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
                                     <li><a href=""><i class="far fa-heart" aria-hidden="true"></i></a></li>
@@ -294,10 +294,33 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#arrival" class="image">
+                                    <img src="resources/img/newitem6.jpeg" class="pic_1" alt="">
+                                    <img src="resources/img/newitem4_1.jpg" class="pic_2" alt="">
+                                </a>
+                                <span class="discount">New</span>
+                                <a href="https://www.facebook.com/HONEYHTUN11/" target="_blank" class="cart">Contact to
+                                    Page</a>
+                                <ul class="links">
+                                    <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="far fa-heart" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <div class="content">
 
+                                    <h3 class="title3"> <a href="">Innisfee </a> </h3>
+                                    <div class="price"><span>8,000 MMK</span></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
             </div>
-
         </section>
         <!-----End New Arrivals--- -->
 
@@ -400,7 +423,7 @@
 
         <!-- Services Section -->
         <section id="services">
-            <h2 class=" text-center title">Our Services</h2>
+            <h2 class=" text-center title"> Services</h2>
             <span class="section-separator"></span>
 
             <div class="container">
@@ -451,7 +474,7 @@
         <!-- Brand Section -->
         <section id="brand" class="section_bg1">
             <div class="container">
-                <h2 class="text-center title">Our Brand</h2>
+                <h2 class="text-center title"> Brands</h2>
                 <span class="section-separator"></span>
                 <section class="customer-logos slider">
                     <div class="slide"><img src="resources/img/b1.jpg">
@@ -641,7 +664,7 @@
 
 
         <!-- Contact Section -->
-        <section id="contact" style="background-color: #fff;">
+        <section id="contact">
             <h2 class="text-center title mt-4">Contact Us</h2>
             <span class="section-separator"></span>
             <div class="container over">
@@ -651,7 +674,8 @@
                     </div>
                     <div class="col-lg-5 ml-4 my-5 p-3 shadow footer1">
                         <p class="titlE mt-3">
-                            <i class="fas fa-envelope-open iconn"></i> moeset.htun@gmail.com</p>
+                            <i class="fas fa-envelope-open iconn"></i>
+                            <a href="mailto:moeset.htun@gmail.com">moeset.htun@gmail.com</a></p>
                         <i class="fas fa-phone-square-alt iconn"></i>
                         <a href="tel:09-420003554" class="titlE mt-2"> 09-420003554 & </a>
                         <i class="fas fa-phone-square-alt iconn"> </i>
@@ -697,6 +721,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="resources/js/app.js"></script>
     <script src="resources/js/testimonials.js"></script>
     <script src="resources/js/splash.js"></script>
